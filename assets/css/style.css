@@ -107,6 +107,28 @@ p {
   justify-content: space-evenly;
 }
 
+.card1 {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--border-radius);
+  padding: 10px;
+  flex: 0 0 500px;
+  width: 500px;
+  height: 200px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: 10px;
+  margin-bottom: 40px;
+  
+}
+
+.card1  header {
+  border-radius: var(--border-radius);
+  padding: 7px;
+  position: relative;
+  margin-top: -30px;
+  text-align: center;
+}
+
 .card {
   border-style: solid;
   border-width: 1px;
@@ -137,7 +159,11 @@ p {
 }
 
 .Horiseon img{
+  width: 480px;
   height: 150px;
+  margin-top: 10px;
+  padding: 5px;
+  justify-content: center;
   object-fit: cover;
   object-position: top;
 }
@@ -149,8 +175,12 @@ p {
   transition: 3s;
 }
   
-
 .card:hover {
+  transform: scale(110%);
+  transition: 0.3s;
+}
+
+.card1:hover {
   transform: scale(110%);
   transition: 0.3s;
 }
