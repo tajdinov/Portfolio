@@ -1,0 +1,184 @@
+
+:root {
+  --white: #fff;
+  --dark-blue: #000000;
+  --blue: #6270eb;
+  --border-radius: 10px;
+}
+
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+h1:hover {
+  transform: scale(1.1);
+  transition: all ease 500ms;
+  margin-right: 80px;
+}
+
+header {
+  padding: 20px;
+  text-align: end;
+  background: linear-gradient(  rgb(27 19 45) 0%, rgb(21 16 24) 98%);
+  color: var(--white);
+}
+
+nav {
+  display: flex;
+  background-color: var(--blue);
+  justify-content: end;
+  margin: 15px -5px;
+  box-shadow:  0px 0px 20px 0px #7090ff;
+}
+
+nav a {
+  color: var(--white);
+  padding: 14px 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 13px;
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+  border-radius: var(--border-radius);
+  background-color: var(--blue);
+}
+
+nav a:hover {
+  background-color: var(--white);
+  color: var(--dark-blue);
+  border-radius: var(--border-radius);
+  box-shadow:  inset 0px 0px 5px 5px #4e59ba5c;
+  box-shadow:  0px 0px 10px 2px var(--white);
+  transition: 1s;
+}
+
+#sidebar {
+  position: absolute;
+  top: 125px;
+  left: -450px;
+  transition: 1s;
+  padding: 15px;
+  width: 500px;
+  color: var(--white);
+  border-radius: 0px var(--border-radius) var(--border-radius) 0px;
+}
+
+#sidebar:hover {
+  left: 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.back img {
+  width: 100%;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+p {
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.projects {
+  flex: 1;
+  background-color: var(--white);
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--border-radius);
+  padding: 10px;
+  flex: 0 0 300px;
+  max-width: 500px;
+  max-height: 200px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: 10px;
+  margin-bottom: 40px;
+}
+
+.card  header {
+  border-radius: var(--border-radius);
+  padding: 7px;
+  position: relative;
+  margin-top: -30px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  display: block;
+}
+
+.Horiseon img{
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.Horiseon img:hover{
+  height: 150px;
+  object-fit: cover;
+  object-position: bottom;
+  transition: 3s;
+}
+  
+
+.card:hover {
+  transform: scale(110%);
+  transition: 0.3s;
+}
+
+.contact {
+  text-align: center;
+  font-size: 16px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: black;
+  margin: 100px;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  background: var(--dark-blue);
+  color: var(--white);
+  margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+}
