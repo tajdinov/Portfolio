@@ -166,7 +166,7 @@ p {
   display: block;
 }
 
-.Horiseon img{
+.PJ img{
   width: 480px;
   height: 150px;
   margin-top: 10px;
@@ -176,7 +176,7 @@ p {
   object-position: top;
 }
 
-.Horiseon img:hover{
+.PJ img:hover{
   height: 150px;
   object-fit: cover;
   object-position: bottom;
